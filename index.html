@@ -1,17 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Минки — frontend-разработчик."
+    />
+    <meta name="theme-color" content="#0f0f0f" />
+    <title>Минки — Frontend-разработчик | Портфолио</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержимому</a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <header class="site-header page-container">
+      <a class="brand" href="#top" aria-label="Наверх, Минки">
+        <img class="brand-mark" src="favicon.svg" alt="" aria-hidden="true" width="45" height="45" />
+      </a>
 
-<body>
-    <div class="git__block">
-        <div class="text">Серпер с 4000 просмотров</div>
-    </div>
-</body>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#projects">Работы</a>
+        <a href="#about">О себе</a>
+      </nav>
 
+    </header>
+
+    <main id="main">
+      <section class="hero page-container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Минки</h1>
+          <p class="hero-role">Разрабатываю интерфейсы для веб-сервисов.</p>
+          <p class="hero-lead">
+            Каталоги с поиском и фильтрами, пользовательские подборки и сценарии с состоянием в реальном времени.
+          </p>
+        </div>
+
+        <div class="hero-ink" aria-hidden="true">
+          <img class="hero-ink-image" src="assets/garganta-white.png" alt="" width="604" height="597" fetchpriority="high" />
+          <canvas class="hero-ink-canvas" width="604" height="597"></canvas>
+        </div>
+      </section>
+
+      <section class="section projects page-container" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="projects-title">Мои работы</h2>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" id="work-weeek">
+            <div class="project-preview">
+              <img src="assets/weeek.webp" alt="Скриншот главной страницы Weeek с заголовком и превью рабочего пространства" loading="lazy" decoding="async" width="960" height="733" />
+            </div>
+            <h3>Weeek <span>/ Рабочее пространство</span></h3>
+            <p>Доски задач, документы и переключение между проектами в плотном рабочем интерфейсе.</p>
+            <div class="project-bottom"><ul class="project-stack" aria-label="Технологии страницы"><li>JavaScript</li><li>SCSS</li></ul><a href="https://weeek.net/ru/" target="_blank" rel="noopener noreferrer" aria-label="Открыть Weeek в новой вкладке">Открыть сайт ↗</a></div>
+          </article>
+
+          <article class="project-card" id="work-enma">
+            <div class="project-preview">
+              <img src="assets/enma.webp" alt="Превью главной страницы Enma с поиском и подборками аниме" loading="lazy" decoding="async" width="960" height="640" />
+            </div>
+            <h3>Enma <span>/ Аниме-каталог</span></h3>
+            <p>Поиск аниме, подборки и страницы просмотра серий в одном интерфейсе.</p>
+            <div class="project-bottom"><ul class="project-stack" aria-label="Технологии страницы"><li>React</li><li>Tailwind CSS</li></ul><a href="https://www.enma.lol/home" target="_blank" rel="noopener noreferrer" aria-label="Открыть Enma в новой вкладке">Открыть сайт ↗</a></div>
+          </article>
+
+          <article class="project-card" id="work-savvycal">
+            <div class="project-preview">
+              <img src="assets/savvycal.webp" alt="Скриншот главной страницы сервиса записи на встречи SavvyCal" loading="lazy" decoding="async" width="960" height="600" />
+            </div>
+            <h3>SavvyCal <span>/ Выбор времени</span></h3>
+            <p>Календарь свободных слотов и запись на встречу без переписки о времени.</p>
+            <div class="project-bottom"><ul class="project-stack" aria-label="Технологии страницы"><li>Tailwind CSS</li></ul><a href="https://savvycal.com/" target="_blank" rel="noopener noreferrer" aria-label="Открыть SavvyCal в новой вкладке">Открыть сайт ↗</a></div>
+          </article>
+
+          <article class="project-card" id="work-craft">
+            <div class="project-preview">
+              <img src="assets/craft.webp" alt="Скриншот главной страницы Craft" loading="lazy" decoding="async" width="960" height="600" />
+            </div>
+            <h3>Craft <span>/ Документы и задачи</span></h3>
+            <p>Документы, вложенные страницы и задачи в личном и командном пространстве.</p>
+            <div class="project-bottom"><ul class="project-stack" aria-label="Технологии страницы"><li>Next.js</li><li>Tailwind CSS</li></ul><a href="https://www.craft.do/" target="_blank" rel="noopener noreferrer" aria-label="Открыть Craft в новой вкладке">Открыть сайт ↗</a></div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section about page-container" id="about" aria-labelledby="about-title">
+        <div class="about-card">
+          <div class="about-copy">
+            <h2 id="about-title">О себе</h2>
+            <p class="about-statement">Я работал над сложными каталогами и пользовательскими сценариями. В таких продуктах мне важно сохранять ясность интерфейса.</p>
+          </div>
+          <div class="skill-list" id="stack">
+            <span>Next.js</span><span>React</span><span>Vue.js</span><span>TypeScript</span><span>JavaScript</span><span>Tailwind CSS</span><span>HTML / CSS</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="hero-ink.js" defer></script>
+  </body>
 </html>
